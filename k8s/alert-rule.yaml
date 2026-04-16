@@ -1,0 +1,18 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: monitoring-app-alerts
+  labels:
+    release: monitoring
+spec:
+  groups:
+    - name: monitoring-app.rules
+      rules:
+        - alert: HighRequestRate
+          expr: rate(http_requests_total[1m]) > 0.1
+          for: 1m
+          labels:
+            severity: warning
+          annotations:
+            summary: "High request rate detected"
+            description: "Requests per second is above normal"
