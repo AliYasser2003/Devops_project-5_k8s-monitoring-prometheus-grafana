@@ -72,7 +72,7 @@ Bash --> `while true; do curl http://localhost:3001/error; done`
 
 
 
-## Screenshots
+# Screenshots
 *****************
 #### Application Running
 ![App Running](Project-5_Screenshots/1_App_Running.png)
