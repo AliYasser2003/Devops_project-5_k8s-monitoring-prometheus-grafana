@@ -74,7 +74,7 @@ Bash --> `while true; do curl http://localhost:3001/error; done`
 
 ## Screenshots
 
-* App running (`/`)
+* App running (`1_App_Running.png`)  [](1_App_Running.png)
 * Metrics endpoint (`/metrics`)
 * Prometheus targets (UP)
 * Prometheus queries
