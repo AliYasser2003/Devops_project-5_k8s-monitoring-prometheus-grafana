@@ -26,22 +26,22 @@ User ---> Node.js App (Pod) ---> Service ---> ServiceMonitor ---> Prometheus ---
 ## Features
 **************
 
-##### 1) Application Metrics
+##### - Application Metrics
 - `http_requests_total` (with labels: method, route, status)
 - `http_errors_total`
 - `http_request_duration_seconds` (Histogram)
 
-##### 2) Monitoring
+##### - Monitoring
 - Prometheus scrapes metrics using ServiceMonitor
 - Metrics exposed via `/metrics` endpoint
 
-##### 3) Visualization (Grafana)
+##### - Visualization (Grafana)
 - Requests per second
 - Total requests
 - Error rate
 - Request latency (P95)
 
-##### 4) Alerting
+##### - Alerting
 - High request rate alert:
 PromQL --> `rate(http_requests_total[1m]) > 0.1`
 
@@ -50,13 +50,13 @@ PromQL --> `rate(http_requests_total[1m]) > 0.1`
 ## Key Queries
 *****************
 
-1) Requests per second:
+- Requests per second:
 PromQL --> `rate(http_requests_total[1m])`
 
-2) Error rate:
+- Error rate:
 PromQL --> `rate(http_errors_total[1m])`
 
-3) Latency (95th percentile):
+- Latency (95th percentile):
 PromQL --> `histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5m]))`
 
 
@@ -64,10 +64,10 @@ PromQL --> `histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5
 ## Load Testing
 ******************
 
-1) Simulate traffic:
+- Simulate traffic:
 Bash --> `while true; do curl http://localhost:3001; done`
 
-2) Simulate errors:
+- Simulate errors:
 Bash --> `while true; do curl http://localhost:3001/error; done`
 
 
