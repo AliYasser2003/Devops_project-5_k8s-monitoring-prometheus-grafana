@@ -74,26 +74,26 @@ Bash --> `while true; do curl http://localhost:3001/error; done`
 
 ## Screenshots
 *****************
-###### Application Running
+## Application Running
 ![App Running](Project-5_Screenshots/1_App_Running.png)
 
-###### Metrics Endpoint
+## Metrics Endpoint
 ![Prometheus Metrics Endpoint](Project-5_Screenshots/2_Prometheus_Metrics_Endpoint.png)
 
-###### Prometheus Targets
+## Prometheus Targets
 ![Prometheus Targets](Project-5_Screenshots/3_Prometheus_Targets.png)
 
-###### Http Requests Total
+## Http Requests Total
 ![Http Requests Total](Project-5_Screenshots/4_Http_Requests_Total.png)
 
-###### Grafana Dashboard
+## Grafana Dashboard
 ![Grafana Dashboard](Project-5_Screenshots/5_Grafana_Dashboard_1.png) 
 ![Grafana Dashboard](Project-5_Screenshots/6_Grafana_Dashboard_2.png)
 
-###### Error Simulation
+## Error Simulation
 ![Error-Simulation Graph-change](Project-5_Screenshots/7_Error_Simulation-Graph_change.png)
 
-###### Alerts
+## Alerts
 ![Alert Inactive](Project-5_Screenshots/8_Alert_Inactive.png)
 ![Alert Firing](Project-5_Screenshots/9_Alert_Firing.png)
 
