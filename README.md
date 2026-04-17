@@ -16,6 +16,7 @@ User ---> Node.js App (Pod) ---> Service ---> ServiceMonitor ---> Prometheus ---
 - Node.js
 - Docker
 - Kubernetes
+- Helm (used to deploy kube-prometheus-stack)
 - Prometheus (kube-prometheus-stack via Helm)
 - Grafana
 - Alertmanager
