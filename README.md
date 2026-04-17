@@ -26,22 +26,22 @@ User ---> Node.js App (Pod) ---> Service ---> ServiceMonitor ---> Prometheus ---
 ## Features
 **************
 
-##### - Application Metrics
+##### Application Metrics
 - `http_requests_total` (with labels: method, route, status)
 - `http_errors_total`
 - `http_request_duration_seconds` (Histogram)
 
-##### - Monitoring
+##### Monitoring
 - Prometheus scrapes metrics using ServiceMonitor
 - Metrics exposed via `/metrics` endpoint
 
-##### - Visualization (Grafana)
+##### Visualization (Grafana)
 - Requests per second
 - Total requests
 - Error rate
 - Request latency (P95)
 
-##### - Alerting
+##### Alerting
 - High request rate alert:
 PromQL --> `rate(http_requests_total[1m]) > 0.1`
 
